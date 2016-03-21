@@ -1,0 +1,23 @@
+<h1>Pags#pag2</h1>
+<p>son los alumnos: <%= @users %></p>
+
+<script type="text/javascript">
+ 
+function mostrar_imagen(src, width, height, alt) {
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+
+    // This next line will just add it to the <body> tag
+    document.body.appendChild(img);
+}
+
+</script>
+
+<button onclick=
+    "mostrar_imagen('http://deanimalia.com/images/full/gatos/azulruso4.jpg', 
+                 276, 
+                 110, 
+                 'Gato');">Agregar gato al body</button> 

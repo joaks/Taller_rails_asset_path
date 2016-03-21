@@ -1,0 +1,21 @@
+ <h1>pagina3</h1>
+ <p>son los alumnos: <%= @users %></p>
+
+ <script type="text/javascript">
+ 	console.log("hola")
+ 	i=1;
+ 	$('body').click(function() {
+   // do something here
+   		if (i==2){
+ 		console.log("hiziste dos clicks");
+
+ 		$(document.body).css("background-image","url('http://deanimalia.com/images/full/gatos/azulruso4.jpg')")
+
+		$( ".backstretch" ).remove();
+
+ 	}
+   		console.log("hize un click " + i)
+   		i++;
+	});
+
+ </script>

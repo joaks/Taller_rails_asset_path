@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+<script type="text/javascript">
+	$(document ).on("page:change",function() {
+    $.backstretch("http://api.ning.com/files/s2sZbafeBpUhRtkfi5JxprILc8w2ZYxeC9wkA-uo6RHWr5fgpdLd64MHybOlS5g*08RjvTaXtacljO5WD0PujnCaH633xWzB/GatoRojo.jpg");
+
+});
+
+
+</script>
+
+<%= render partial: "shared/navbar" %>
+<div class="container"><%= yield %></div>
+</body>
+
+
+</html>
