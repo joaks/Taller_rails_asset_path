@@ -2,20 +2,20 @@
  <p>son los alumnos: <%= @users %></p>
 
  <script type="text/javascript">
- 	console.log("hola")
+ 	
  	i=1;
  	$('body').click(function() {
-   // do something here
+   
    		if (i==2){
  		console.log("hiziste dos clicks");
 
  		$(document.body).css("background-image","url('http://deanimalia.com/images/full/gatos/azulruso4.jpg')")
 
-		$( ".backstretch" ).remove();
+		$( ".backstretch" ).remove(); // remover el fondo actual
 
  	}
    		console.log("hize un click " + i)
-   		i++;
+   		i++; //contador de clicks
 	});
 
  </script>
